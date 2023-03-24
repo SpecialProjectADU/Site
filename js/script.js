@@ -35,3 +35,67 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Get the button element for the dropdown
+var dropdownButton = document.getElementsByClassName("dropbtn")[0];
+
+// When the button is clicked, toggle the visibility of the dropdown content
+dropdownButton.addEventListener("click", function() {
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+});
+
+
+$(document).ready(function() {
+  // Define the event data
+  var eventData = [
+    {
+      name: "Event 1",
+      date: "1 Jan 2024",
+      time: "7:00 PM",
+      location: "Dubai, UAE",
+      img: "event1.jpg"
+    },
+    {
+      name: "Event 2",
+      date: "15 Feb 2024",
+      time: "6:00 PM",
+      location: "Abu Dhabi, UAE",
+      img: "event2.jpg"
+    },
+    {
+      name: "Event 3",
+      date: "28 Mar 2024",
+      time: "8:00 PM",
+      location: "Sharjah, UAE",
+      img: "event3.jpg"
+    }
+  ];
+
+  // Loop through the event data and update the HTML
+  for (var i = 0; i < eventData.length; i++) {
+    var event = eventData[i];
+    var $eventElement = $(".event").eq(i);
+
+    $eventElement.find(".event-image").attr("src", event.img);
+    $eventElement.find(".event-name").text(event.name);
+    $eventElement.find(".event-date-time").text("Date: " + event.date + ", Time: " + event.time);
+    $eventElement.find(".event-location").text("Location: " + event.location);
+  }
+});
+
+// Hide footer on scroll down, show on scroll up
+let prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector(".footer").style.bottom = "0";
+  } else {
+    document.querySelector(".footer").style.bottom = "-100px";
+  }
+  prevScrollPos = currentScrollPos;
+}
