@@ -74,17 +74,33 @@
   <!--Navbar End-->
 
   <!--Video-->
-  <section class="video-section">
-    <!-- <iframe id="main_video"
-      src="videos/main.mp4"
-      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-      allowtransparency="true"
+  <section class="embed-responsive embed-responsive-16by9 video-section">
+    <div class="inner-container">
+      <form>
+        <div class="search-container video-overlay">
+          <form>
+            <div class="dropdown d-md-none d-lg-block">
+              <button class="dropbtn">Category <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="#"><i class="fa fa-picture-o"> Images</i></a>
+                <a href="#"><i class="fa fa-video-camera"> Videos</i></a>
+                <a href="#"><i class="fa fa-volume-up"> Audio</i></a>
+              </div>
+            </div>
+            </form>
+            <form>
+            <div class="input-container" id="search-bar">
+              <input type="text" placeholder="Search...">
+              <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </form>
+        <video id="main_video" class="embed-responsive-item" autoplay muted loop >
+          <source src="videos/main.mp4" type="video/mp4">
+        </video>
 
-      ></iframe> -->
-    <video autoplay muted loop id="main_video">
-      <source src="videos/main.mp4" type="video/mp4">
-    </video>
-
+    </div>
   </section>
   <!--Video End-->
 
