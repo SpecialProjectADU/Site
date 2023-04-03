@@ -1,3 +1,4 @@
+// Event Hover effect 
 document.addEventListener("DOMContentLoaded", function () {
   const events = document.querySelectorAll(".event");
 
@@ -13,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // active link
+// End Event Hover effect 
+
+// Active Link Hover effect
   const linkColor = document.querySelectorAll(".gallery-btn");
 
   function colorLink() {
@@ -26,16 +29,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   linkColor.forEach((link) => {
     link.addEventListener("mouseover", (event) => {
-      event.target.classList.add("btn-success");
+      event.target.classList.add("btn-secondary");
       event.target.classList.add("opacity-75");
-      setTimeout(() => {
-        event.target.classList.remove("btn-success");
-        event.target.classList.remove("opacity-75");
-      }, 600);
     });
+    link.addEventListener("mouseout", (event) => {
+    event.target.classList.remove("btn-secondary");
+    event.target.classList.remove("opacity-75");
+  });
   });
 });
 
+// End Active Link Hover effect
+
+
+// NOTE: why not just use a bootstrap input-group ?
 // Get the button element for the dropdown
 var dropdownButton = document.getElementsByClassName("dropbtn")[0];
 
@@ -49,7 +56,7 @@ dropdownButton.addEventListener("click", function() {
   }
 });
 
-
+/*
 $(document).ready(function() {
   // Define the event data
   var eventData = [
@@ -87,7 +94,9 @@ $(document).ready(function() {
     $eventElement.find(".event-location").text("Location: " + event.location);
   }
 });
+*/
 
+/*
 // Hide footer on scroll down, show on scroll up
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
@@ -99,3 +108,4 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
+*/
