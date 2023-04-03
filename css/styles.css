@@ -218,24 +218,6 @@ button[type=submit] {
   border-radius: 25px;
   background-color: #f7f7f7;
 }
-.video-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh; min-height: 100%;
-  background: rgb(253,29,45);
-  background: linear-gradient(90deg, rgba(253,29,45,1) 5%, rgba(91,199,83,1) 50%, rgba(232,232,232,1) 90%);
-}
-
-#main_video {
-  opacity: 50%;
-  background:transparent;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  object-fit: fill;
-}
-
 
 .events {
   display: flex;
@@ -375,3 +357,68 @@ button[type=submit] {
   text-align: center;
 }
 
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 90vh; min-height: 100%; */
+  /* background: rgb(253,29,45);
+  background: linear-gradient(90deg, rgba(253,29,45,1) 5%, rgba(91,199,83,1) 50%, rgba(232,232,232,1) 90%); */
+  background-image: linear-gradient(
+  45deg,
+  hsl(356deg 58% 45%) 0%,
+  hsl(356deg 60% 45%) 7%,
+  hsl(356deg 63% 46%) 15%,
+  hsl(356deg 65% 46%) 23%,
+  hsl(356deg 68% 46%) 32%,
+  hsl(19deg 47% 46%) 41%,
+  hsl(53deg 31% 42%) 51%,
+  hsl(107deg 32% 48%) 60%,
+  hsl(148deg 88% 38%) 69%,
+  hsl(143deg 49% 52%) 78%,
+  hsl(144deg 48% 59%) 86%,
+  hsl(145deg 49% 65%) 93%,
+  hsl(147deg 50% 70%) 100%
+  );
+  /* https://www.joshwcomeau.com/gradient-generator/ */
+  /* https://cssgradient.io/ */
+}
+
+#main_video {
+  
+  opacity: 50%;
+  background:transparent;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55); 
+  z-index: 0;
+}
+/* .video-overlay {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#search-bar{
+  background-color: rgb(255, 255, 255);
+} */
