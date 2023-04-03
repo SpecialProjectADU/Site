@@ -369,7 +369,7 @@ button[type=submit] {
   background-color: rgba(0, 0, 0, 0.55); 
   z-index: 0;
 }
-.video-overlay {
+/* .video-overlay {
   position: absolute;
   margin: 0;
   top: 50%;
@@ -381,4 +381,4 @@ button[type=submit] {
 
 #search-bar{
   background-color: rgb(255, 255, 255);
-}
+} */
