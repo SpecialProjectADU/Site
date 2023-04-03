@@ -20,7 +20,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
+         
+          <!--
+
+             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Browse
             </a>
@@ -33,6 +36,26 @@
               <li><a class="dropdown-item" href="#">Events</a></li>
             </ul>
           </li>
+
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Audios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
@@ -40,10 +63,16 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About Us</a>
           </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+          <li class="nav-item d-md-none">
+            <a class="nav-link" href="#">Shopping Cart</a>
+          </li>
 
         </ul>
 
-        <div class="search-container">
+        <div class="d-none d-md-flex justify-content-center mt-1 mx-auto">
   <form>
     <div class="dropdown">
       <button class="dropbtn">Category <i class="fa fa-caret-down"></i></button>
@@ -62,19 +91,28 @@
   </form>
 </div>
 
-        <i class="fa fa-shopping-cart pe-4 fs-4"></i>
+        <a class="nav-link d-none d-md-inline" href="#">
+          <i class="fa fa-shopping-cart pe-4 fs-4"></i>
+        </a>
         <div>
+          <a href="#" class="nav-link d-none d-md-inline">
+
            <img class="profile-pic" src="images/profilePic.jpg" alt="Profile Picture">
+
+          </a>
         </div>
+        <!--
 
         <button class="btn btn-outline-success">Publish</button>
+
+        -->
       </div>
     </div>
   </nav>
   <!--Navbar End-->
 
   <!--Video-->
-  <section class="video-section">
+  <section class="video-section d-none d-md-block">
     <!-- <iframe id="main_video"
       src="videos/main.mp4"
       frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
@@ -92,12 +130,12 @@
   <!--Gallery-->
   <section class="container text-center">
     <div class="row mt-5">
-      <div class="col">
+      <div class="col-md d-grid d-md-block">
         
-        <a class="pe-4"><button type="button" class="btn btn-dark gallery-btn">Most Popular</button></a>
-        <a class="pe-4"><button type="button" class="btn gallery-btn">Photos</button></a>
-        <a class="pe-4"><button type="button" class="btn gallery-btn">Videos</button></a>
-        <a class="pe-4"><button type="button" class="btn gallery-btn">Audio</button></a>
+        <a class="pe-4"><button type="button" class="btn gallery-btn btn-dark text-decoration-none">Most Popular</button></a>
+        <a class="pe-4"><button type="button" class="btn gallery-btn text-decoration-none">Photos</button></a>
+        <a class="pe-4"><button type="button" class="btn gallery-btn text-decoration-none">Videos</button></a>
+        <a class="pe-4"><button type="button" class="btn gallery-btn text-decoration-none">Audio</button></a>
       </div>
     </div>
 
@@ -137,7 +175,49 @@
     </div>
   </section>
   <!--Gallery End-->
+  <!-- Alternative Events Section-->
+  <section class="p-5">
 
+    <h2 class="section-heading">Upcoming Events</h2>
+    <div class="container">
+        <div class="row gap-4 justify-content-center">
+            <div class="col-lg-3 col-md-12 m-lg-0 event2">
+                <div class="card bg-light">
+                  <img src="images/event1.jpg" alt="Event 1" class="card-img-top event-image2 img-fluid rounded-top-3">
+                  <div class="card-body">
+                    <h3 class="card-title text-center mb-3">Event 1</h3>
+                    <p class="event-date-time">Date: 10th March 2023, Time: 5:00 PM</p>
+                    <p class="event-location">Location: Dubai, UAE</p>
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-12  m-lg-0 event2">
+              <div class="card bg-light">
+                <img src="images/event2.jpg" alt="Event 1" class="card-img-top event-image2 img-fluid rounded-top-3">
+                <div class="card-body">
+                  <h3 class="card-title text-center mb-3">Event 2</h3>
+                  <p class="event-date-time">Date: 15th March 2023, Time: 6:00 PM</p>
+                  <p class="event-location">Location: Abu Dhabi, UAE</p>
+                </div>
+              </div>
+
+          </div>
+          <div class="col-lg-3 col-md-12 mb-lg-0 event2">
+            <div class="card bg-light">
+              <img src="images/event3.jpg" alt="Event 1" class="card-img-top img-fluid  event-image2 rounded-top-3">
+              <div class="card-body">
+                <h3 class="card-title text-center mb-3">Event 3</h3>
+                <p class="event-date-time">Date: 20th March 2023, Time: 7:00 PM</p>
+                <p class="event-location">Location: Sharjah, UAE</p>
+              </div>
+            </div>
+
+        </div>
+            
+        </div>
+    </div>
+  </section>
   <!--Events-->
   <section id="events">
     <h2 class="section-heading">Upcoming Events</h2>
