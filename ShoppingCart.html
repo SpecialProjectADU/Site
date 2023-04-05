@@ -1,116 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--linked styles start-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="./CSS/StylesShoppingCart.css">
+	<link rel="stylesheet" href="./css/StylesShoppingCart.css">
+	<link rel="stylesheet" href="./css/Navbar.css">
+	<link rel="stylesheet" href="./css/Footer.css">
+	<link rel="stylesheet" href="./css/Global.css">
+
+	<!--linked styles end-->
 	<title>Shopping Cart</title>
 </head>
 <body class="bg-bg-primary">
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-	<div class="container-fluid">
-		<a href="#" class="navbar-brand">Logo</a>
-		<button 
-			class="navbar-toggler" 
-			type="button" 
-			data-bs-toggle="collapse" 
-			data-bs-target="#navmenu"
-		>
-		<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navmenu">
-			<ul class="navbar-nav ms-auto">
-			<!-- ms-auto gives an auto side margin to the first elementstands for margin auto(look this up)-->	
-			<li class="nav-item">
-				<a href="#" class="nav-link">Find Someone</a>
-			</li>
-			<li class="nav-item">
 
-				<a href="#" class="nav-link">Browse</a>
-			</li>
-			<li class="nav-item">
-
-				<a href="#" class="nav-link">About</a>
-			</li>
-			<li class="nav-item">
-
-				<a href="#" class="nav-link"></a>Contact</a>
-			</li>
+	  <!-- Navbar Start-->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="./index.html">Zood</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="./BrowseUsers.html">Users</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./SearchQuery.html">Photos</a>
+			  </li>
+	
+			  <li class="nav-item">
+				<a class="nav-link" href="./SearchQuery.html">Videos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./404.html">Audios</a>
+			  </li>
+	
+			  <li class="nav-item">
+				<a class="nav-link" href="./Event.html">Events</a>
+			  </li>
+	
+			  <li class="nav-item">
+				<a class="nav-link" href="./404.html">Blogs</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./Contact.html">Contact Us</a>
+			  </li>
+	
+			  <li class="nav-item">
+				<a class="nav-link" href="./About.html">About Us</a>
+			  </li>
+			  <li class="nav-item d-md-none">
+				<a class="nav-link" href="./404.html">Account</a>
+			  </li>
+			  <li class="nav-item d-md-none">
+				<a class="nav-link" href="./ShoppingCart.html">Shopping Cart</a>
+			  </li>
+	
 			</ul>
-		</div>
-	</div>
-	</nav>
 	
-	<div class="container">
-		<div class="row">
-		<div class="col">
-			<div class="row">
-				<h1 >Checkout</h1>
+			<div class="d-none d-md-flex justify-content-center mt-1">
+			  <form>
+				<div class="dropdown">
+				  <button class="dropbtn">Category <i class="fa fa-caret-down"></i></button>
+				  <div class="dropdown-content">
+					<a href="#"><i class="fa fa-picture-o"> Images</i></a>
+					<a href="#"><i class="fa fa-video-camera"> Videos</i></a>
+					<a href="#"><i class="fa fa-volume-up"> Audio</i></a>
+				  </div>
+				</div>
+				</form>
+				<form>
+				<div class="input-container">
+				  <input type="text" placeholder="Search...">
+				  <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+				</div>
+			  </form>
 			</div>
-			<div class="col ms-4 border border-secondary">
-				<div class="row h-10 justify-content-start">
-					<!--
-	<i class="fad fa-shopping-cart" style="--fa-primary-color: #393e46; --fa-secondary-color: #929aab;"></i>
 	
-					-->
-					 <h2 class="d-inline-block"> <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i></span> Order summary</h2>
-				</div>
-				<div class="row">
-					<div class="col"><b>Name</b></div>
-					<div class="col"><b>Price</b></div>
-					<div class="col"><b>License</b></div>
-					<div class="col"><b>Total</b></div>
-				</div>
-				<div class="row">
-					<div class="col justify-content-start mb-2">
-						<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 1">
-						<p class="d-inline"><b>Product 1</b></p>
-					</div>
-					<div class="col">19.99AED</div>
-					<div class="col">1</div>
-					<div class="col">19.99AED</div>
-				</div>
-				<div class="row">
-					<div class="col justify-content-start mb-2">
-						<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 2">
-						<p class="d-inline"><b>Product 2</b></p>
-					</div>
-					<div class="col">24.99AED</div>
-					<div class="col" >2</div>
-					<div class="col">49.98AED</div>
-				</div>
-				<div class="row">
-					<div class="col justify-content-start mb-2">
-						<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 3">
-						<p class="d-inline"><b>Product 3</b></p>
-					</div>
-					<div class="col">9.99AED</div>
-					<div class="col">3</div>
-					<div class="col">29.97AED</div>
-				</div>
-
-
-
+			<a class="nav-link d-none d-md-inline" href="#">
+			  <i class="fa fa-shopping-cart pe-4 fs-4"></i>
+			</a>
+			<div>
+			  <a href="#" class="nav-link d-none d-md-inline">
+	
+			   <img class="profile-pic" src="images/profilePic.jpg" alt="Profile Picture">
+	
+			  </a>
 			</div>
 			
-	</div>
+		  </div>
+		</div>
+	  </nav>
 
-	<div class="col-4 card text-center bg-bg-secondary rounded-3" style="width: 18rem;">
-		<div class="card-body">
-			<h3>Summary</h2>
-		<p>Subtotal: <b>99.94 AED</b></p>
-		<p>Discounts: <b>-9.99 AED</b></p>
-		<p>Fees: <b>5.00AED</b></p>
-		<hr>
-		<p>Grand total: <b>94.95AED</b></p>
-		<a herf="#" class="btn w-100 btn-info btn-lg btn-block">Pay</a>
+	  <!-- Navbar End-->
+	<section class="p-5 my-5">
+		<div class="container">
+			<div class="row">
+			<div class="col">
+				<div class="row">
+					<h1 >Checkout</h1>
+				</div>
+				<div class="col ms-4 border border-secondary">
+					<div class="row h-10 justify-content-start">
+						<!--
+		<i class="fad fa-shopping-cart" style="--fa-primary-color: #393e46; --fa-secondary-color: #929aab;"></i>
+		
+						-->
+						 <h2 class="d-inline-block"> <span> <i class="fa fa-shopping-cart" aria-hidden="true"></i></span> Order summary</h2>
+					</div>
+					<div class="row">
+						<div class="col"><b>Name</b></div>
+						<div class="col"><b>Price</b></div>
+						<div class="col"><b>License</b></div>
+						<div class="col"><b>Total</b></div>
+					</div>
+					<div class="row">
+						<div class="col justify-content-start mb-2">
+							<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 1">
+							<p class="d-inline"><b>Product 1</b></p>
+						</div>
+						<div class="col">19.99AED</div>
+						<div class="col">1</div>
+						<div class="col">19.99AED</div>
+					</div>
+					<div class="row">
+						<div class="col justify-content-start mb-2">
+							<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 2">
+							<p class="d-inline"><b>Product 2</b></p>
+						</div>
+						<div class="col">24.99AED</div>
+						<div class="col" >2</div>
+						<div class="col">49.98AED</div>
+					</div>
+					<div class="row">
+						<div class="col justify-content-start mb-2">
+							<img class="img-fluid" src="https://via.placeholder.com/50x50.png" alt="Product 3">
+							<p class="d-inline"><b>Product 3</b></p>
+						</div>
+						<div class="col">9.99AED</div>
+						<div class="col">3</div>
+						<div class="col">29.97AED</div>
+					</div>
+	
+	
+	
+				</div>
+				
+		</div>
+	
+		<div class="col-4 card text-center bg-bg-secondary rounded-3" style="width: 18rem;">
+			<div class="card-body">
+				<h3>Summary</h2>
+			<p>Subtotal: <b>99.94 AED</b></p>
+			<p>Discounts: <b>-9.99 AED</b></p>
+			<p>Fees: <b>5.00AED</b></p>
+			<hr>
+			<p>Grand total: <b>94.95AED</b></p>
+			<a herf="#" class="btn w-100 btn-info btn-lg btn-block">Pay</a>
+			</div>
+		</div>
+		
 		</div>
 	</div>
+
+
+	</section>	
 	
+
+
+<!--Footer Start-->
+<footer class="footer fixed-bottom bg-dark text-light py-5 ">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-4">
+		  <h3 class="text-uppercase">About Us</h3>
+		  <p>Creative professionals from all backgrounds and businesses of all sizes produce their best work with incredible content and innovative tools, all on one platform.</p>
+		</div>
+		<div class="col-md-4">
+		  <h3 class="text-uppercase">Contact Us</h3>
+		  <ul class="list-unstyled m-0 p-0">
+			<li><i class="fa fa-map-marker me-2"></i> 123 Main Street, Abu Dhabi, UAE</li>
+			<li><i class="fa fa-phone me-2"></i> +971 123456789</li>
+			<li><i class="fa fa-envelope me-2"></i> info@website.com</li>
+		  </ul>
+		</div>
+		<div class="col-md-4">
+		  <h3 class="text-uppercase">Follow Us</h3>
+		  <ul class="list-unstyled d-flex justify-content-right social-icons">
+			<li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-facebook "></i></a></li>
+			<li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-twitter "></i></a></li>
+			<li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-instagram"></i></a></li>
+			<li class="list-inline-item"><a class="d-inline-block text-light display-3"" href="#"><i class="fa fa-pinterest "></i></a></li>
+		  </ul>
+		</div>
+	  </div>
+	  <hr>
+	  <div class="row">
+		<div class="col-md-12 text-center">
+		  <p>© 2023 All Rights Reserved by Zood.</p>
+		</div>
+	  </div>
 	</div>
-</div>
+  </footer>
+<!--Footer End-->
+
+<!-- JS dependencies start-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 
+<!-- JS dependencies end-->
 </body>
 </html>
