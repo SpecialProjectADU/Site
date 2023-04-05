@@ -22,9 +22,13 @@ Icons: Bootstrap icons
 ## Naming Conventions 
 >NEVER USE THESE: no quotes or - or _ or "  or '  or ` or ! or @ or $ or % or ^ or & or * or ( or ) or + or = or any other weired characters. just regular alphabet
 
+
 ### Git Branches
 
 Naming Convention: PascalCase
+
+### Sub-Directories
+Naming Convention: single word and small case
 
 
 ### CSS
