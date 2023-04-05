@@ -1,0 +1,192 @@
+/*
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+*/
+
+/*
+classes to delete:
+1. events
+2. event:hover (redundent, done in JS)
+3. finilize whether event-image or event-image2
+4. event-date-time, event-location (maybe replace with text style class from bootstrap or custom
+5. event2 or event (depends on which  we finalize)
+6. event2:hover or event:hover (depends which even  finalize)
+
+*/
+
+
+/* index css */
+
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #333;
+  border-radius: 10px;
+}
+/*
+start video css 
+*/
+
+
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  /* height: 90vh; min-height: 100%; */
+  /* background: rgb(253,29,45);
+  background: linear-gradient(90deg, rgba(253,29,45,1) 5%, rgba(91,199,83,1) 50%, rgba(232,232,232,1) 90%); */
+  background-image: linear-gradient(
+  45deg,
+  hsl(356deg 58% 45%) 0%,
+  hsl(356deg 60% 45%) 7%,
+  hsl(356deg 63% 46%) 15%,
+  hsl(356deg 65% 46%) 23%,
+  hsl(356deg 68% 46%) 32%,
+  hsl(19deg 47% 46%) 41%,
+  hsl(53deg 31% 42%) 51%,
+  hsl(107deg 32% 48%) 60%,
+  hsl(148deg 88% 38%) 69%,
+  hsl(143deg 49% 52%) 78%,
+  hsl(144deg 48% 59%) 86%,
+  hsl(145deg 49% 65%) 93%,
+  hsl(147deg 50% 70%) 100%
+  );
+  /* https://www.joshwcomeau.com/gradient-generator/ */
+  /* https://cssgradient.io/ */
+}
+
+#main_video {
+  
+  opacity: 50%;
+  background:transparent;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55); 
+  z-index: 0;
+}
+/* .video-overlay {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+#search-bar{
+  background-color: rgb(255, 255, 255);
+} */
+
+
+/*
+end video css
+*/
+
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.event {
+  width: calc(33.33% - 20px);
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+.event2 {
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+.event2:hover {
+  transform: scale(1.05);
+}
+
+.event:hover {
+  transform: scale(1.05);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-image2 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-name {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-date-time,
+.event-location {
+  margin: 10px 20px;
+}
+
+
+
+.imgHoverEffect figure img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.imgHoverEffect figure:hover img {
+    opacity: .5;
+}
