@@ -20,16 +20,8 @@ classes to delete:
 */
 
 
-
-
 /* index css */
-body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #393e46;
-  background-color: #f7f7f7;
-}
+
 
 a:hover {
   color: #333;
@@ -140,6 +132,3 @@ a:hover {
 .imgHoverEffect figure:hover img {
     opacity: .5;
 }
-
-
-
