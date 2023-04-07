@@ -9,7 +9,7 @@
         <!-- CSS stylesheets -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/StylesAboutContactEventLoginSignup.css">
     
         <!-- Bootstrap Scripts -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -26,14 +26,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
     </head>
 <body>
+
     <div>
         <div class="div-row">
             <div class="div-img">
-                <img src="image/image4.jpg" alt="" height="500" width="700" style="border-radius: 6px; padding-left: 30px;">
+                <img src="images/image4.jpg" alt="" height="500" width="700">
             </div>
             <div class="div-reg container">
-                <h1 style="padding-left: 120px; padding-top: 50px;" class="lead">Sign UP</h1>
-                <p style="padding-left: 50px;">Already have account ? <a href="login.html">Log In</a></p>
+                <h1 class="lead">Sign UP</h1>
+                <p>Already have account ? <a href="login.html">Log In</a></p>
                 <form >
                    <input type="text" class="reg-input" placeholder="First Name">
                    <input type="text" class="reg-input" placeholder="Last Name"><br>
@@ -43,42 +44,58 @@
                    <input type="password" class="input1 form-control" placeholder="Confirm Password">
                    <!-- <label for="country-code">Country Code:</label> -->
                     <select name="country-code" id="country-code" class="reg-input1" style="margin-top: 10px;">
-                        <option value="+1">+971 (UAE)</option>
-                        <option value="+44">+966 (KSA)</option>
-                        <option value="+91">+973 (BHR)</option>
-                        <option value="+86">+967 (KWT)</option>
-                        <option value="+86">+974 (QAT)</option>
+                        <option value="+971">+971 (UAE)</option>
                     </select>
                     
                     <input type="text" id="phone-number" name="phone-number" required class="input2">
                    <input type="text" class="input1 form-control" placeholder="National ID">
                    
-                   <button style="margin-left: 150px;"> Log in</button>
+                   <button type="submit"> Log in</button>
                 </form>
             </div>
         </div>
     </div><br><br><br>
-    <footer>
+    <footer class="footer bg-dark text-light py-5 rounded-top ">
         <div class="container">
-            <div class="foot">
-                <div>
-                    
-                    <small>Our website aims to serve as a hub for UAE youth to showcase and monetize<br> their creative talents
-                        in capturing the beauty and diversity of UAE landscapes<br> and culture, through high-quality visual
-                        media and professional photography<br>services.
-                    </small>
-                </div>
-                <div class="business">
-                    <small><b>Our Office</b></small><br>
-                    <i class="fa fa-address-book icon"></i>
-                    <SMALL>Abu Dhabi, United Arab Emirates</SMALL><br>
-                    <i class="fa fa-address-book icon"></i>
-                    <small>0500000000</small><br>
-                    <i class="fa fa-envelope-circle-check icon"></i>
-                    <small>r.alnuaimi@hotmail.com</small>
-                </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="text-uppercase">About Us</h3>
+              <p>Creative professionals from all backgrounds and businesses of all sizes produce their best work with incredible content and innovative tools, all on one platform.</p>
             </div>
-        </div><br><br>
-   </footer>
+            <div class="col-md-4">
+              <h3 class="text-uppercase">Contact Us</h3>
+              <ul class="list-unstyled m-0 p-0">
+                <li><i class="fa fa-map-marker me-2"></i> Abu Dhabi, United Arab Emirates</li>
+                <li><i class="fa fa-phone me-2"></i> +971 0500000000</li>
+                <li><i class="fa fa-envelope me-2"></i> zoad@hotmail.com</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3 class="text-uppercase">Follow Us</h3>
+              <ul class="list-unstyled d-flex justify-content-right social-icons">
+                <li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-facebook "></i></a></li>
+                <li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-twitter "></i></a></li>
+                <li class="list-inline-item me-1"><a class="d-inline-block text-light" href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a class="d-inline-block text-light display-3"" href="#"><i class="fa fa-pinterest "></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>© 2023 All Rights Reserved by Zoad.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer End-->
+    
+    
+      <!-- JS dependencies start-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+      
+      <!-- JS dependencies end-->
 </body>
+    
 </html>
