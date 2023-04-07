@@ -1,0 +1,220 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+
+}
+
+.header{
+  height:100vh;
+  width: 100%;
+  padding: 0 8%; 
+  position: relative;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+ width:140px;
+}
+
+.nav-links{
+  padding: 28px 0;
+}
+.nav-links li{
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-links li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after{
+  content: '';
+  background: #393E46;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-links li a:hover::after{
+ width: 100%;
+}
+
+.btn{
+  background: #393E46;
+  color:#fff;
+  padding: 10px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.Audio{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  max-width: 900px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.Audio h1 {
+  font-size: 65px;
+  font-weight:600;
+  margin-bottom: 50px;
+   }
+ 
+   .Audio form{
+ background: #fff;
+ padding:3px;
+ border-radius:10px;
+ display: flex;
+   } 
+
+   .Audio form input{
+  flex:1;
+  border:none;
+  outline: none;
+  padding: 0 9px;
+  font-size: 30px;
+   }
+   .Audio form button{
+      background: #393E46;
+      color: #ffffff;
+      padding: 200x 50px;
+      width: 20%;
+      height:60px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+          }
+          .category-list{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 40px;
+          }
+          .category{
+              width: 80px;
+              height:80px;
+              background: 929AAB(255,61,0,0.15);
+              margin: 0 10px;
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+
+
+          }
+
+          .category img{
+           width: 25px;
+           margin-bottom:5px;
+
+          }
+
+          .back-video{
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              min-width: 100%;
+              min-height: 100%;
+              width:auto;
+              height: auto;
+              z-index: -100;
+          }
+
+          @media(min-aspect-ratio: 16/9){
+              .back-video{
+                  width:100%;
+                  height:auto;
+              }
+          }
+          @media(max-aspect-ratio: 16/9){
+              .back-video{
+                  width:auto;
+                  height:100%;
+              }
+          }
+
+          .container{
+            background: #929AAB;
+        }
+        .container .heading{
+          font-size: 3rem;
+          padding: 2rem 0;
+          text-align: center;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-shadow: 0 .5rem 1rem #F7F7F7;
+          color: #fff;
+        }
+       .container .music-container{
+        display: flex;
+        align-items: center;
+        flex-flow:column;
+        }
+        .container .music-container .box{
+          height:9rem;
+          width:80%;
+          display:flex;
+          align-items: center;
+          background: #f9f9f9;
+          border-radius: 1rem;
+          box-shadow: 0 .5rem 1rem #000;
+          overflow: hidden;
+          margin: 2rem;
+        }
+        .container .music-container .box .image{
+          height:100%;
+          width:25%;
+        }
+
+        .container .music-container .box .image img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+        .container .music-container .box .music{
+          width:70%;
+        }
+        .container .music-container .box .music audio{
+          width:100%;
+          outline: none;
+        }
+        .container .music-container .box .music audio::-webkit-media-controls-enclosure{
+          background: none;
+        }
+
+        @media  (max-width:600px){
+          .container .music-container .box{
+            height:27rem;
+            width:90%;
+            flex-flow: column;
+          }
+
+          .container .music-container .box .image{ 
+            height:80%;
+            width:100%;
+
+          }
+          .container .music-container .box .music{ 
+            height:20%;
+            width:100%;
+
+          }
+
+        }
+
