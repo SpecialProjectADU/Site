@@ -1,0 +1,152 @@
+.blog-browse > h1,
+h2,
+h3,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-browse {
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #f7f7f7;
+}
+
+.blog-browse-header {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.browse-heading {
+  font-size: 95px;
+  margin: 0;
+}
+
+.blog-browse-header > .small-text {
+  font-size: 20px;
+  width: 22%;
+}
+
+.blog-browse-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.browse-category {
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 26px;
+  padding: 0.5rem 1.5rem;
+}
+
+.browse-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  row-gap: 5rem;
+  padding: 2rem 0 8rem;
+}
+
+.blog-card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.blog-card-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-profile-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.blog-card-thumbnail {
+  width: 100%;
+}
+
+.blog-thumbnail-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.blog-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-read-time {
+  align-self: flex-end;
+  font-weight: 500;
+}
+
+.blog-card-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.blog-card-socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.blog-social-icon {
+  width: 35px;
+  cursor: pointer;
+}
+
+.blog-card-date {
+  padding: 0.5rem;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+/* Dropdown Styles */
+select {
+  /* background-color: #1F99CD; */
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 1rem 2.5rem 1rem 1rem;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23ffcc00%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-align: left;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+@-moz-document url-prefix() {
+  select {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #ffffff;
+    display: none;
+  }
+}
+
+body select {
+  display: block;
+}
