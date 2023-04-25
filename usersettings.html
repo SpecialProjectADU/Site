@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Settings</title>
+    <link rel="stylesheet" href="css/usersettings.css"/>
+    <script src="https://kit.fontawesome.com/4bc3f560cd.js" crossorigin="anonymous"></script>
+</head>
+<h1>User Settings</h1>
+<body>
+<form>
+    <div>
+    </div>
+</form>
+<form action="update_settings.php" method="post">
+    <form>
+        <div class="photo-upload">
+            <label for="photo">Upload a photo:</label>
+            <img src="images/userp.webp" width="100" style="border-radius: 50%;"/>
+            <input  type="file" id="photo" name="photo">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <lable for="Account"> Account </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-bell"></i>
+                <lable for="Notification"> Notifications </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-heart"></i>
+                <lable for="Likes"> My Likes </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-user-plus"></i>
+                <lable for="request"> Requests </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <lable for="security"> Security </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-sharp fa-solid fa-money-bills"></i>
+                <lable for="billing"> Billing </lable>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <lable for="logout"> Logout </lable>
+            </div>
+        </div>
+    </form>
+    <div class="form-grid">
+        <label for="display">Display Name:</label>
+        <input type="text" id="display" name="display">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio"></textarea>
+
+        <label for="birth">Date of Birth:</label>
+        <input type="date" id="birth" name="Birthday">
+
+        <button type="button" class="btn btn-update">Update Setting</button>
+    </div>
+</form>
+</body>
+</html>
