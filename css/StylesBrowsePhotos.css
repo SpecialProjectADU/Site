@@ -1,0 +1,81 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.column img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  transition: 0.2s linear;
+}
+
+.contents {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contents:hover .image {
+  filter: grayscale(0.25) brightness(0.5);
+
+}
+
+.contents:hover .centered {
+  opacity: 1;
+  transition: 0.2s linear;
+}
+
+.btn-light {
+  background-color: #F7F7F7;
+  color: #393E46;
+  border-style: hidden;
+}
+
+.btn:hover{
+  border-style: hidden;
+  background-color: #393E46;
+  color: #F7F7F7;
+  transition: 0.1s linear;
+}
