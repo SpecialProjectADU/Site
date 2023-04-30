@@ -1,3 +1,25 @@
+//For changing navbar background color on scroll
+const navElement = document.querySelector('.navbar');
+const logoElement = document.querySelector('img[alt="Zoad"]');
+const navElements = document.querySelector('#navElements');
+const mainInputField = document.querySelector('#navInputField');
+window.addEventListener('scroll', () =>{
+  if (window.scrollY >= 400){
+    navElement.classList.add('navbar-scrolled');
+    logoElement.classList.add('smallLogo');
+    logoElement.classList.remove('normalLogo');
+    navElements.classList.add('hide');
+    mainInputField.classList.remove('hide');
+  }
+  else{
+    navElement.classList.remove('navbar-scrolled');
+    logoElement.classList.add('normalLogo');
+    logoElement.classList.remove('smallLogo');
+    navElements.classList.remove('hide')
+    mainInputField.classList.add('hide');
+  }
+});
+
 // Event Hover effect 
 document.addEventListener("DOMContentLoaded", function () {
   const events = document.querySelectorAll(".event");
