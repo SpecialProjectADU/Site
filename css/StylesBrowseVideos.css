@@ -1,0 +1,58 @@
+.video-gallery {
+    margin-top: 1rem;
+}
+.video-item {
+    margin-bottom: 1rem;
+}
+.thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+.thumbnail video {
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: #fff;
+    animation: pulse 2s infinite;
+}
+.download-icon, .share-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #fff;
+    right: 1rem;
+}
+.share-icon {
+    right: 3.5rem;
+}
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

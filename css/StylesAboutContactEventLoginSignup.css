@@ -1,48 +1,48 @@
 body {
-  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #393e46;
-  background-color: #f7f7f7;
-}
-.btn-primary {
-  background-color: #393e46;
-  border-color: #393e46;
-  color: #fff;
-}
-
-.btn-outline-primary {
-  color: #393e46;
-  border-color: #393e46;
-}
-
-.btn-outline-primary:hover {
-  background-color: #393e46;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #929aab;
-}
-
-.card {
-  border-color: #929aab;
-}
-
-.card-header {
-  background-color: #929aab;
-  color: #fff;
-}
-
-.card-footer {
-  background-color: #fff;
-}
-
-.card-title {
-  color: #393e46;
-}
-
-.form-control:focus {
-  border-color: #393e46;
-  box-shadow: 0 0 0 0.2rem rgba(57, 62, 70, 0.25);
-}
+	font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #393e46;
+	background-color: #f7f7f7;
+  }
+  .btn-primary {
+	background-color: #393e46;
+	border-color: #393e46;
+	color: #fff;
+  }
+  
+  .btn-outline-primary {
+	color: #393e46;
+	border-color: #393e46;
+  }
+  
+  .btn-outline-primary:hover {
+	background-color: #393e46;
+	color: #fff;
+  }
+  
+  .btn-primary:hover {
+	background-color: #929aab;
+  }
+  
+  .card {
+	border-color: #929aab;
+  }
+  
+  .card-header {
+	background-color: #929aab;
+	color: #fff;
+  }
+  
+  .card-footer {
+	background-color: #fff;
+  }
+  
+  .card-title {
+	color: #393e46;
+  }
+  
+  .form-control:focus {
+	border-color: #393e46;
+	box-shadow: 0 0 0 0.2rem rgba(57, 62, 70, 0.25);
+  }
