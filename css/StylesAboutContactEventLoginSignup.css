@@ -41,6 +41,10 @@ body {
   .card-title {
 	color: #393e46;
   }
+
+  .form-control {
+	border: 1px solid #6b6666;
+  }
   
   .form-control:focus {
 	border-color: #393e46;
