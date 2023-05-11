@@ -1,16 +1,9 @@
-body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    align-items: start;
-    justify-content: center;
-    margin: 20px;
-
-}
 
 label {
     display: block;
     font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 input, textarea {
