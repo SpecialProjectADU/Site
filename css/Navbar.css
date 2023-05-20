@@ -4,10 +4,16 @@
   }  
 }
 
-.dropdown-menu {
+.dropdown-menu{
+  text-align: center;
+}
+
+ .nav-item .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.7);
   min-width:90px;
   text-align: center;
 }
+
 
 .navbar{
   padding: 0px 150px 0px 90px;
