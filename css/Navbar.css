@@ -9,11 +9,21 @@
 }
 
  .nav-item .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   min-width:90px;
   text-align: center;
 }
 
+.nav-item .dropdown-menu .dropdown-item{
+  color: white;
+}
+.nav-item .dropdown-menu .dropdown-item:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#navInputField .nav-link:hover{
+  background-color: rgba(0 , 0, 0, 0);
+}
 
 .navbar{
   padding: 0px 150px 0px 90px;
@@ -23,6 +33,13 @@
 .nav-link{
   color: white;
   font-size: larger;
+  border-radius: 15px;
+}
+
+.nav-link:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 .navbar-scrolled{
@@ -72,8 +89,9 @@
 }
 
 #secondarySearchButton:hover{
-    background-color: #929AAB;
-    color: black;
+  border-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 .form-control{

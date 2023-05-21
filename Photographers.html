@@ -60,7 +60,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./About.html">About Us</a>
+            <a class="nav-link" href="./About.html">About Zode</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Contact.html">Contact Us</a>
@@ -104,87 +104,81 @@
     </nav>
       <!--Navbar End-->
 
-     <!--Filter Start-->
-	<div class="container" style="margin-top: 15vh;">
-		<div class="row">
-			<div class="col-auto">
-				<p class="search fs-4 fw-bold">Search For: <span class="fw-normal">"Name"</span></p>
-			</div>
-			<div class="col-auto">
-				<div class="dropdown">
-					<button class="btn dropdown-toggle bg-white text-dark border border-black" type="button"
-						id="sortDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-						Sort By
-					</button>
+<!--Filter Start-->
+<div class="container" style="margin-top: 15vh;">
+   <div class="row" style="margin: auto;">
+       <div class="col-auto">
+           <p class="search fs-4 fw-bold">Search For: <span class="fw-normal">"Name"</span></p>
+       </div>
+       <div class="col-auto">
+           <div class="dropdown">
+               <button class="btn dropdown-toggle bg-white text-dark border border-black" type="button"
+                       id="sortDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                   Sort By
+               </button>
 					<ul class="dropdown-menu" aria-labelledby="sortDropdown">
 						<li><a class="dropdown-item" href="#" value="popular">Views</a></li>
 						<li><a class="dropdown-item" href="#" value="lowest">Followers</a></li>
 						<li><a class="dropdown-item" href="#" value="heighest">Number of Photos</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+               </ul>
+           </div>
+       </div>
+   </div>
 
-		<div class="row" style="margin: auto; ">
-			<div class="col">
-				<div class="dropdown w-100" >
-					<button class="btn dropdown-toggle bg-white text-dark border border-black w-100" type="button"
-						id="locationDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-						Location
-					</button>
-					<ul class="dropdown-menu w-100" aria-labelledby="locationDropdown">
-						<li><a class="dropdown-item" href="#" value="ad">Abu Dhabi</a></li>
-						<li><a class="dropdown-item" href="#" value="db">Dubai</a></li>
-						<li><a class="dropdown-item" href="#" value="sh">Sharjah</a></li>
-						<li><a class="dropdown-item" href="#" value="aj">Ajman</a></li>
-						<li><a class="dropdown-item" href="#" value="fj">Fujairah</a></li>
-						<li><a class="dropdown-item" href="#" value="rak">Ras Al-Khaimah</a></li>
-						<li><a class="dropdown-item" href="#" value="uq">Umm Al Quwain</a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- <div class="col">
-				<div class="dropdown w-100">
-					<button class="btn dropdown-toggle bg-white text-dark border border-black w-100" type="button"
-						id="qualityDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-						Quality
-					</button>
-					<ul class="dropdown-menu w-100" aria-labelledby="qualityDropdown" >
-						<li><a class="dropdown-item" href="#" value="8k">8K UHD - 7680 x 4320 pixels</a></li>
-						<li><a class="dropdown-item" href="#" value="4k">4K UHD - 4096 x 2160 pixels</a></li>
-						<li><a class="dropdown-item" href="#" value="fhd">Full-HD - 1920 x 1080 pixels</a></li>
-						<li><a class="dropdown-item" href="#" value="hd">HD - 1280 x 720 pixels</a></li>
-					</ul>
-				</div>
-			</div> -->
-			<div class="col">
-				<div class="dropdown w-100">
-					<button class="btn dropdown-toggle bg-white text-dark border border-black w-100" type="button"
-						id="cameraDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
-						Camera
-					</button>
-					<ul class="dropdown-menu w-100" aria-labelledby="cameraDropdown">
-						<li><a class="dropdown-item" href="#" value="nikon">Nikon</a></li>
-						<li><a class="dropdown-item" href="#" value="sony">Sony</a></li>
-						<li><a class="dropdown-item" href="#" value="canon">Canon</a></li>
-						<li><a class="dropdown-item" href="#" value="fujifilm">Fujifilm</a></li>
-						<li><a class="dropdown-item" href="#" value="panasonic">Panasonic</a></li>
-						<li><a class="dropdown-item" href="#" value="leica">Leica</a></li>
-						<li><a class="dropdown-item" href="#" value="samsung">Samsung</a></li>
-						<li><a class="dropdown-item" href="#" value="gopro">GoPro</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--Filter End-->
+   <div class="row " style="margin: auto;">
+       <div class="col">
+           <div class="btn-group w-100">
+               <button type="button" class="btn bg-white text-dark border border-black text-start w-100"
+                       data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                   Location
+               </button>
+               <button type="button"
+                       class="btn dropdown-toggle disabled dropdown-toggle-split bg-white text-dark border border-black text-start"
+                       data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+               </button>
+               <ul class="dropdown-menu text-start w-100 p-2" aria-labelledby="locationDropdown">
+                   <li><a class="dropdown-item" href="#" value="ad">Abu Dhabi</a></li>
+                   <li><a class="dropdown-item" href="#" value="db">Dubai</a></li>
+                   <li><a class="dropdown-item" href="#" value="sh">Sharjah</a></li>
+                   <li><a class="dropdown-item" href="#" value="aj">Ajman</a></li>
+                   <li><a class="dropdown-item" href="#" value="fj">Fujairah</a></li>
+                   <li><a class="dropdown-item" href="#" value="rak">Ras Al-Khaimah</a></li>
+                   <li><a class="dropdown-item" href="#" value="uq">Umm Al Quwain</a></li>
+               </ul>
+           </div>
+       </div>
+       <div class="col">
+           <div class="btn-group w-100">
+               <button type="button" class="btn bg-white text-dark border border-black text-start w-100"
+                       data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                   Camera
+               </button>
+               <button type="button"
+                       class="btn dropdown-toggle disabled dropdown-toggle-split bg-white text-dark border border-black"
+                       data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+               </button>
+               <ul class="dropdown-menu text-start w-100 p-2" aria-labelledby="cameraDropdown">
+                   <li><a class="dropdown-item" href="#" value="nikon">Nikon</a></li>
+                   <li><a class="dropdown-item" href="#" value="sony">Sony</a></li>
+                   <li><a class="dropdown-item" href="#" value="canon">Canon</a></li>
+                   <li><a class="dropdown-item" href="#" value="fujifilm">Fujifilm</a></li>
+                   <li><a class="dropdown-item" href="#" value="panasonic">Panasonic</a></li>
+                   <li><a class="dropdown-item" href="#" value="leica">Leica</a></li>
+                   <li><a class="dropdown-item" href="#" value="samsung">Samsung</a></li>
+                   <li><a class="dropdown-item" href="#" value="gopro">GoPro</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</div>
+<!--Filter End-->
 
 
       <!--
          Content Start
       -->
             <!-- Cards Grid Section -->
-            <section class="container" style="margin-top: 2vh;">
+            <section class="container" style="margin-top: auto">
                <div style="padding: 30px 15px 30px 15px;">
                   <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-*">
                      <!-- row-cols-* -->
