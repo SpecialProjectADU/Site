@@ -67,13 +67,13 @@
   transition: 0.2s linear;
 }
 
-.btn-light {
+.centered .btn-light {
   background-color: #F7F7F7;
   color: #393E46;
   border-style: hidden;
 }
 
-.btn:hover{
+.centered .btn:hover{
   border-style: hidden;
   background-color: #393E46;
   color: #F7F7F7;
