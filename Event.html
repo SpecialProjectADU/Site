@@ -24,98 +24,95 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-scrolled ">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled">
         <a class="navbar-brand" href="./index.html">
-            <img src="images/Logo.jpg" alt="Zoad" height="100">
+          <img src="images/Logo.jpg" alt="Zoad" class="smallLogo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bstarget="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Explore </a>
-    
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="./BrowsePhotos.html">Photos</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="./404.html">Videos</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="./Audio.html">Audio</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="./Event.html">Events</a>
-                        </li>
-                        
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="./Photographers.html">Photographers</a>
-                        </li>
-                    </ul>
-    
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Explore </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./BrowsePhotos.html">Photos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./About.html">About Zode</a>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">Contact Us</a>
+                <li>
+                  <a class="dropdown-item" href="./404.html">Videos</a>
                 </li>
-            </ul>
-    
-            <ul navbar-nav me-auto mb-2 mb-lg-0 style="list-style-type: none; margin-right:20px;">
-                <li class="nav-item input-group mt-3" id="navInputField">
-                    <button type="button" id="catButton" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split bg-light" data-bs-toggle="dropdown" ariaexpanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="./SearchQuery.html">Photos</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="./SearchQuery.html">Videos</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Audio</a>
-                        </li>
-                    </ul>
-    
-                    <input type="search" placeholder="Search..." id="secondaryInputField" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn btn-outline-secondary" type="button" id="secondarySearchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <a class="nav-link d-none d-md-inline ms-3 mt-2" href="./ShoppingCart.html">
-                        <i class="fa fa-shopping-cart pe-4 fs-4"></i>
-                    </a>
-                    <a href="./404.html" class="nav-link d-none d-md-inline mx-auto">
-                        <img class="profile-pic" src="images/profilePic.jpg" alt="Profile Picture">
-                    </a>
+                <li>
+                  <hr class="dropdown-divider">
                 </li>
-            </ul>
+                <li>
+                  <a class="dropdown-item" href="./Audio.html">Audio</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Event.html">Events</a>
+                </li>
+                
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Photographers.html">Photographers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About Zode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <ul navbar-nav me-auto mb-2 mb-lg-0 style="list-style-type: none; margin-right: 20px;">
+            <li class="nav-item input-group mt-3" id="navInputField">
+              <button type="button" id="catButton" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./SearchQuery.html">Photos</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./SearchQuery.html">Videos</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Audio</a>
+                </li>
+              </ul>
+              <input type="search" placeholder="Search..." id="secondaryInputField" class="form-control" aria-label="Text input with dropdown button">
+              <button class="btn btn-outline-secondary" type="button" id="secondarySearchButton">
+                <i class="fa fa-search"></i>
+              </button>
+              <a class="nav-link d-none d-md-inline ms-3 mt-2" href="./ShoppingCart.html">
+                <i class="fa fa-shopping-cart pe-4 fs-4"></i>
+              </a>
+              <a href="./404.html" class="nav-link d-none d-md-inline mx-auto">
+                <img class="profile-pic" src="images/profilePic.jpg" alt="Profile Picture">
+              </a>
+            </li>
+          </ul>
         </div>
-    </nav><br><br><br><br>
-<!--Navbar End-->
+      </nav>
+    <!--Navbar End-->
 
-    <h1 style="color:black; padding-top:30px; padding-bottom: 30px;" class="container">Upcoming Events</h1>
+    <h1 style="color:black; padding-bottom: 30px; margin-top: 15vh;" class="container">Upcoming Events</h1>
     <main class="container">
         
         <div class="slider">
