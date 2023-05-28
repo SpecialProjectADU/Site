@@ -79,3 +79,46 @@
   color: #F7F7F7;
   transition: 0.1s linear;
 }
+
+.modal-header{
+  background-color: #393e46;
+  color: white;
+  border-style: none;
+  /* display: none; */
+}
+/*
+Background: #F7F7F7
+Secondary background: #EEEEEE
+Elements Primary: #393E46
+Elements Secondary: #929AAB
+*/
+.modal-body{
+  padding: 0px;
+}
+
+.modal-footer{
+  border-top: 0px !important;
+  background-color: #393e46;
+  justify-content: space-between
+}
+
+.modalProfile, .modalProfile:hover{
+  color: transparent;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+#table1 td{
+ /* text-align: center;  */
+ /* vertical-align: middle; */
+}
+
+#cell1{
+ /* padding: -10px 0px 0px 0px; */
+ margin-top: -5px;
+}
+
+.anchorStyle, .anchorStyle:hover, .anchorStyle:visited, .anchorStyle:focus, .anchorStyle:active  {
+ text-decoration: none;
+ color: white
+}
